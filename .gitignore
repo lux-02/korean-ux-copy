@@ -24,6 +24,8 @@
 !.claude/skills/
 !.claude/skills/korean-ux-copy/
 !.claude/skills/korean-ux-copy/**
+!.claude/skills/orchestrator/
+!.claude/skills/orchestrator/**
 
 !.claude-plugin/
 !.claude-plugin/**

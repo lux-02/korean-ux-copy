@@ -1,7 +1,12 @@
 ---
 name: korean-ux-copy
-description: Use when auditing or rewriting Korean user-facing UX copy in a codebase, especially AI-generated/vibe-coded apps. Triggers for Korean copy review, UX copy lift, AI-like Korean, awkward landing copy, CTA/error/empty-state wording, conversion-safe Korean copy, Kanana-assisted rewrite, or safe dry-run copy patches. Do not use for general translation, non-Korean copy, or legal rewriting without explicit review.
+description: Use when auditing or rewriting Korean user-facing UX copy in a codebase, especially AI-generated/vibe-coded apps. Triggers for Korean copy review, UX copy lift, AI-like Korean, awkward landing copy, CTA/error/empty-state wording, conversion-safe Korean copy, Kanana-assisted rewrite, safe dry-run copy patches, re-running the audit, updating copy after code changes, applying approved patches, re-analyzing specific files, or improving previous scan results. Also triggers for 다시 실행, 재실행, 카피 업데이트, 수정, 보완, 이전 결과 개선. For full pipeline (scan+analyze+rewrite+patch), use kcopy-pipeline instead. Do not use for general translation, non-Korean copy, or legal rewriting without explicit review.
 ---
+
+<!-- Canonical location: .claude/skills/korean-ux-copy/ (Claude Code)
+     Mirror location:    .agents/skills/korean-ux-copy/ (Codex)
+     Sync policy: always apply changes to both locations. -->
+
 
 # Korean UX Copy
 
