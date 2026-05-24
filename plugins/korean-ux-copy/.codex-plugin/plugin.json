@@ -38,6 +38,8 @@
     ],
     "brandColor": "#0F766E",
     "screenshots": [
+      "./assets/detection-heatmap.png",
+      "./assets/detection-top5-patterns.png",
       "./assets/reviewfit-before-after.png",
       "./assets/menupan-before-after.png"
     ]
