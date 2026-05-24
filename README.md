@@ -22,6 +22,8 @@ Korean UX Copy의 추천 흐름은 **규칙으로 진단하고, Benefit Hook Lif
 
 규칙은 문제를 찾는 데 강합니다. 반면 Hero, SEO, 가격표, FAQ처럼 말투와 뉘앙스가 중요한 문구는 규칙만으로 선택받는 대안을 만들기 어렵습니다. 이때 Kanana를 한국어 보정 레이어로 사용하면, 문맥에 맞는 수정 후보를 더 안정적으로 얻을 수 있습니다.
 
+![파이프라인 흐름](plugins/korean-ux-copy/assets/pipeline-flow.png)
+
 ```txt
 문제를 찾는 역할: Korean UX Copy 규칙
 이득과 장면을 압축하는 역할: Benefit Hook Lift
@@ -44,6 +46,33 @@ conversion CTA: 매장 말투로 초안 만들기
 ```
 
 Hero, CTA, feature, pricing, SEO, FAQ처럼 전환을 만드는 표면은 `hooked_safe`가 기본입니다. 오류, 빈 상태, toast, aria-label, 법적/정책 문구처럼 신뢰와 회복이 중요한 표면은 `safe_plain` 또는 `manual_only`로 내려갑니다.
+
+## E2E 테스트 — GPT 생성 한국어 SaaS 카피 5종
+
+GPT(`gpt-4o-mini`)로 생성한 SaaS 프로젝트 관리, 이커머스, HR 솔루션, 배달, 핀테크 5종 랜딩 카피를 감사한 결과입니다.
+
+| 서비스 유형 | 감지된 타겟 | 문제 발견 | High severity |
+|---|---|---|---|
+| SaaS 프로젝트 관리 (TSX) | 11 | 9 | 8 |
+| 이커머스 패션 (TSX) | 11 | 9 | 6 |
+| HR 솔루션 (JSON) | 11 | 8 | 6 |
+| 음식 배달 (TSX) | 11 | 8 | 5 |
+| 핀테크 (JSON) | 11 | 6 | 5 |
+| **합계** | **55** | **40 (73%)** | **30** |
+
+![패턴별 감지 히트맵](plugins/korean-ux-copy/assets/detection-heatmap.png)
+
+자주 감지된 패턴:
+
+![자주 감지된 패턴 TOP 5](plugins/korean-ux-copy/assets/detection-top5-patterns.png)
+
+| 규칙 | 패턴 | 감지 건수 |
+|---|---|---|
+| KA-140 | 다음 행동 없는 빈 화면 메시지 | 10 |
+| KA-133 | 행동 없는 에러 메시지 | 10 |
+| KA-100 | 여정(journey) 은유 | 5 |
+| KA-103 | "혁신적인" 자기 선언 | 5 |
+| KA-111 | 생산성/효율성 극대화 슬로건 | 4 |
 
 ## Before / After 사례
 
