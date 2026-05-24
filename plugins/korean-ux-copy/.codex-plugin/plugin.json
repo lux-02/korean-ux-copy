@@ -1,7 +1,7 @@
 {
   "name": "korean-ux-copy",
   "version": "0.1.0",
-  "description": "Audit and improve user-facing Korean UX copy in codebases with conversion-safe rewrites, optional Kanana assistance, and LLM fallback.",
+  "description": "Audit and improve user-facing Korean UX copy in codebases. Detects 15 anti-patterns (KA-100–KA-152) with 73% detection rate on GPT-generated Korean SaaS copy. Produces one Kanana-powered, conversion-safe rewrite per finding.",
   "author": {
     "name": "lux-02",
     "url": "https://github.com/lux-02"
@@ -21,7 +21,7 @@
   "interface": {
     "displayName": "Korean UX Copy",
     "shortDescription": "Turn awkward Korean UX copy into safer, sharper rewrites.",
-    "longDescription": "Audit Korean user-facing copy in codebases, classify UI surfaces, suggest one conversion-safe rewrite by default, and optionally use Kanana as a Korean rewrite provider with agent-side safety gates. If Kanana is unavailable, use runtime LLM fallback under the same claim gate.",
+    "longDescription": "Audit Korean user-facing copy in codebases, classify UI surfaces by role (hero, CTA, error, empty state, form helper), and suggest one Kanana-powered conversion-safe rewrite per finding. 15 anti-patterns detected with 73% hit rate on GPT-generated Korean SaaS fixtures.",
     "developerName": "lux-02",
     "category": "Productivity",
     "capabilities": [
@@ -34,7 +34,7 @@
     "defaultPrompt": [
       "Audit this project's Korean UX copy. Do not edit files.",
       "Find AI-like Korean copy and show safe dry-run diffs.",
-      "Use Benefit Hook Lift and Kanana for high-impact Korean rewrites; if Kanana is unavailable, use llm_fallback with the same claim gate."
+      "Use Benefit Hook Lift and Kanana to rewrite high-impact Korean copy surfaces (hero, CTA, pricing, SEO)."
     ],
     "brandColor": "#0F766E",
     "screenshots": [

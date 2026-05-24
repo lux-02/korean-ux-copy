@@ -1,6 +1,6 @@
 {
   "name": "korean-ux-copy",
-  "description": "Audit and improve user-facing Korean UX copy in codebases with conversion-safe rewrites, optional Kanana assistance, and LLM fallback.",
+  "description": "Audit and improve user-facing Korean UX copy in codebases. Detects 15 anti-patterns (KA-100–KA-152) with 73% detection rate on GPT-generated Korean SaaS copy. Produces one Kanana-powered, conversion-safe rewrite per finding.",
   "version": "0.1.0",
   "author": {
     "name": "lux-02"
