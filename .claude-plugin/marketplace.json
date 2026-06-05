@@ -4,13 +4,13 @@
     "name": "lux-02"
   },
   "description": "Korean UX copy plugins for auditing and improving user-facing Korean text in codebases.",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "plugins": [
     {
       "name": "korean-ux-copy",
       "source": "./plugins/korean-ux-copy",
       "description": "Audit and improve user-facing Korean UX copy in codebases. Detects 15 anti-patterns (KA-100–KA-152) with 73% detection rate on GPT-generated Korean SaaS copy. Produces one Kanana-powered, conversion-safe rewrite per finding.",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "author": {
         "name": "lux-02"
       },
